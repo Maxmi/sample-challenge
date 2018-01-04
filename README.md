@@ -55,6 +55,19 @@ Each requirement is assigned a point value. A fully complete requirement will ea
 
 ## Sign Up
 
+Plan:
+x add table to schema
+x write db functions for adding
+x write route for signup
+
+x GET request to get a sign up form - done
+x POSt reqeust to add user to db
+
+
+write views
+x for signup page
+
+
 Routing:
 - [ ] __20:__ Navigating to `/sign-up` loads the sign up page.
 
@@ -68,6 +81,15 @@ Users CANNOT:
 - [ ] __30:__ Sign up without an email that is already in use.
 
 ## Sign in
+
+Plan:
+[x] Write db function for getting users
+
+Write `/sign-in` routes:
+[x] GET - to get signin form
+[ ] POST - to get user from db and redirect to `/`
+
+[x] Write view for sign in form
 
 Routing:
 - [ ] __20:__ Navigating to `/sign-in` loads the sign in page.
