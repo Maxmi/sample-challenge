@@ -12,7 +12,11 @@
     "db:seed": "psql -d vinyl < src/data/albums.sql",
     "start": "nodemon src/index.js --exec babel-node --presets es2015,stage-2",
     "lint": "./node_modules/.bin/eslint src",
-    "test": "mocha --require babel-core/register test/**/*.test.js"
+    "test": "export NODE_ENV=test && npm run test:db:reset && mocha --require babel-core/register test/**/*.test.js",
+    "test:db:create": "createdb vinyl_test",
+    "test:db:schema": "psql -d vinyl_test < src/data/schema.sql",
+    "test:db:drop": "dropdb vinyl_test",
+    "test:db:reset": "npm run test:db:drop && npm run test:db:create && npm run test:db:schema"
   },
   "license": "MIT",
   "dependencies": {
