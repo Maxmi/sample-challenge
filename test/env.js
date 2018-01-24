@@ -1,2 +1,2 @@
-process.env.DATABASE_URL = 'postgres://localhost/vinyl';
-process.env.TEST_DATABASE_URL = 'postgres://localhost/vinyl_test';
+process.env.DATABASE_URL = 'postgres://localhost/cafe';
+process.env.TEST_DATABASE_URL = 'postgres://localhost/cafe_test';

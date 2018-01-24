@@ -6,3 +6,10 @@ VALUES
   ('Melodrama', 'Lorde'),
   ('In Rainbows', 'Radiohead')
 ;
+
+INSERT INTO
+  users (name, email, password)
+VALUES
+  ('bob', 'bob@b.com', 'lol'),
+  ('joe', 'joe@j.com', 'lol')
+;
