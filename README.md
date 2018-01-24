@@ -53,67 +53,14 @@ Each requirement is assigned a point value. A fully complete requirement will ea
 
 ## Specs
 
-## Sign Up
-
-Plan:
-x add table to schema
-x write db functions for adding
-x write route for signup
-
-x GET request to get a sign up form - done
-x POSt reqeust to add user to db
-
-
-write views
-x for signup page
-
-
-Routing:
-- [ ] __20:__ Navigating to `/sign-up` loads the sign up page.
-
-Users can:
-- [ ] __40:__ Sign up for an account with a name, email and password.
-- [ ] __10:__ Be redirected to the home page (`/`) after signing up.
-
-Users CANNOT:
-- [ ] __10:__ Sign up without a name value
-- [ ] __10:__ Sign up without an email address value
-- [ ] __30:__ Sign up without an email that is already in use.
-
-## Sign in
-
-Plan:
-[x] Write db function for getting users
-
-Write `/sign-in` routes:
-[x] GET - to get signin form
-[ ] POST - to get user from db and redirect to `/`
-
-[x] Write view for sign in form
-
-Routing:
-- [ ] __20:__ Navigating to `/sign-in` loads the sign in page.
-
-Users can:
-- [ ] __20:__ Sign in to an existing account with an email address and password.
-- [ ] __10:__ Be redirected to the home page (`/`) after signing in.
-
-Users CANNOT:
-
-- [ ] __30:__ Sign in with an invalid email address and password combination.
+## Reviews
+- [ ] implement feature for users to submit reviews  
+- [ ] reviews should be displayed on page without refreshing
+- [ ] users should also see other reviews on the same page
 
 ## Testing
 
 Testing:
-- [ ] __30:__ Write a test for the `signUp` action using Mocha. This test should check that calling the `signUp` function adds a row in the database
+- [ ] __30:__ Write a test for the `add review` action using Mocha. This test should check that calling the `add review` function adds a row in the database
 
-## Profile
-
-Routing:
-- [ ] __20:__ Navigating to `/users/<USER ID>` loads the profile page. The profile page has a button `Edit` which when clicked, navigates to the edit profile page.
-- [ ] __20:__ Navigating to `/users/<USER ID>/edit` loads the edit profile page.
-- [ ] __20:__ Sending a PUT request to `/users/<USER ID>` updates the profile of the user
-
-Users can:
-- [ ] __10:__ See their username and email
-- [ ] __30:__ Edit their username and email using AJAX. Updating their profile should NOT require a page refresh. Submitting the form on `/users/<USER ID>/edit` page asynchronously updates the profile information. The user remains on the edit page `/users/<USER ID>/edit`.
+## Redirect
