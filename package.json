@@ -11,12 +11,7 @@
     "db:schema": "psql -d cafe < src/data/schema.sql",
     "db:seed": "psql -d cafe < src/data/albums.sql",
     "start": "nodemon src/index.js --exec babel-node --presets es2015,stage-2",
-    "lint": "./node_modules/.bin/eslint src",
-    "test": "mocha --require babel-core/register test/**/*.test.js",
-    "test:db:create": "createdb cafe_test",
-    "test:db:schema": "psql -d cafe_test < src/data/schema.sql",
-    "test:db:drop": "dropdb cafe_test",
-    "test:db:reset": "npm run test:db:drop && npm run test:db:create && npm run test:db:schema"
+    "lint": "./node_modules/.bin/eslint src"
   },
   "license": "MIT",
   "dependencies": {
