@@ -18,6 +18,6 @@ VALUES
 INSERT INTO
   reviews (user_id, album_id, title, body)
 VALUES
-  ('1', '1', 'bob's review title', 'bob's review'),
-  ('2', '2', 'joe's review title', 'joe's review')
+  ('1', '1', 'bobs review title', 'bobs review'),
+  ('2', '2', 'joes review title', 'joes review')
 ;
